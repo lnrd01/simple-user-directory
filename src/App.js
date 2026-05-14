@@ -9,7 +9,6 @@ function App() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        // Replace this with your actual API call
         const response = await fetch(' https://jsonplaceholder.typicode.com/users');
         const data = await response.json();
         setUsers(data.slice(0, 5));
